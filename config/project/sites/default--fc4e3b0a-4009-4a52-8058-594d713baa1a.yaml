@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: en-US
+name: CraftTemplate
+primary: true
+siteGroup: 3f88c1d0-df73-4b76-a64e-54581e98462e # Tradezone
+sortOrder: 1

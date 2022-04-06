@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ craft.app.language }}">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ siteName }}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    {{
+      craft.vite.script("src/js/app.ts")
+    }}
+  </head>
+  <body class="ltr">
+    <header>
+      <nav
+        class="border-blue-500 px-14 py-2 border-2 flex items-center justify-between uppercase"
+      >
+        <div
+          class="w-[257px] h-[100px] border-red-500 border-2 flex justify-center items-center"
+        >
+          Logo
+        </div>
+        <ul class="flex justify-center items-center gap-12 font-semibold">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+          <li><a href="#">Link 5</a></li>
+        </ul>
+        <a class="font-semibold text-red-500" href="#">Login</a>
+      </nav>
+    </header>
+    <div class="container mx-auto px-4">{% block content %} {% endblock %}</div>
+    <footer
+      class="fixed bottom-0 h-16 w-full border-blue-500 px-4 py-2 border-2 flex items-center justify-center"
+    >
+      Footer
+    </footer>
+  </body>
+</html>

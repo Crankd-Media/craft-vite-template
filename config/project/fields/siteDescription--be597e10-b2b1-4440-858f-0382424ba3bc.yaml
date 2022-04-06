@@ -1,0 +1,19 @@
+columnSuffix: tmqhchzh
+contentColumnType: text
+fieldGroup: abdef80e-e162-418f-a801-45d77c378f14 # Global Fields
+handle: siteDescription
+instructions: ''
+name: 'Site Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

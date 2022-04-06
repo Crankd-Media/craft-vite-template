@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: about
+name: About
+propagationMethod: all
+siteSettings:
+  fc4e3b0a-4009-4a52-8058-594d713baa1a: # CraftTemplate
+    enabledByDefault: true
+    hasUrls: true
+    template: about/_entry
+    uriFormat: about
+type: single

@@ -1,0 +1,52 @@
+dateModified: 1649217720
+email:
+  fromEmail: admin@crankd.nz
+  fromName: Tradezone
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0ce672be-119f-48a3-a440-24845d748ddf: General # General
+    3c90d3cb-d126-4e18-8464-4517e74d8bdd: 'Post Content' # Post Content
+    3f88c1d0-df73-4b76-a64e-54581e98462e: Tradezone # Tradezone
+    3fb8c724-e4e5-4f25-9596-8e98cb8cc669: 'Post Categories' # Post Categories
+    6d10649f-1bca-4be1-9da0-f083d5a06743: Blog # Blog
+    6f825aaa-92be-4436-81af-f2fe77052b28: Blog # Blog
+    07b6ac2d-ab35-49cd-a9bb-d7c0e1fbd761: 'Blog Categories' # Blog Categories
+    7dd1a8cd-da16-4c19-9b12-38edb57071b7: Image # Image
+    47bb61b1-ef48-42c0-8b2c-a9fb9d4c6aa1: Image # Image
+    84e12084-7c43-40cb-8704-4676aa61a765: Blog # Blog
+    810b7d1a-6a17-4b9b-aa31-705760f14b03: Text # Text
+    912df84c-1252-4be8-85a2-2e3a2cb9477c: Common # Common
+    986d51ad-79a8-45a8-bf62-01f25129da38: 'About Image' # About Image
+    1702b317-f035-4873-a37a-db3b071c0973: 'Singles Fields' # Singles Fields
+    43983404-ec16-4f06-8a11-069aeb9ac3ae: 'Feature Image' # Feature Image
+    abdef80e-e162-418f-a801-45d77c378f14: 'Global Fields' # Global Fields
+    b02561f8-09d7-47d2-8595-524c36789911: 'Site Information' # Site Information
+    b134842a-5933-42df-ac59-3d95deb106e8: About # About
+    bdb64804-b3e3-4ad0-9ad4-0031ae4d0619: Text # Text
+    be597e10-b2b1-4440-858f-0382424ba3bc: 'Site Description' # Site Description
+    d4b45657-380d-438f-b66f-2355e2cf497e: Summary # Summary
+    d7667796-b743-4617-bd23-836b4cdb569d: About # About
+    dc05cb0f-f3bb-4626-89c9-b167ee758fa3: 'Blog Post Fields' # Blog Post Fields
+    fc4e3b0a-4009-4a52-8058-594d713baa1a: CraftTemplate # CraftTemplate
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: Tradezone
+  schemaVersion: 3.7.33
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
