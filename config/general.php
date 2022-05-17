@@ -34,4 +34,11 @@ return [
 
     // Whether crawlers should be allowed to index pages and following links
     'disallowRobots' => !$isProd,
+
+    // dev settings
+    // Dev environment settings
+    'aliases' => [
+        '@web' => App::env('PRIMARY_SITE_URL'),
+        '@root' => dirname(__DIR__) . '/',
+    ],
 ];

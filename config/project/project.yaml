@@ -1,8 +1,23 @@
-dateModified: 1649217720
+dateModified: 1652754660
 email:
   fromEmail: admin@crankd.nz
   fromName: Tradezone
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  blog:
+    hasUrls: true
+    name: Blog
+    settings:
+      path: '@webroot/assets/blog'
+    type: craft\fs\Local
+    url: '@web/assets/blog'
+  general:
+    hasUrls: true
+    name: General
+    settings:
+      path: '@webroot/assets/general'
+    type: craft\fs\Local
+    url: '@web/assets/genral'
 meta:
   __names__:
     0ce672be-119f-48a3-a440-24845d748ddf: General # General
@@ -25,6 +40,7 @@ meta:
     b134842a-5933-42df-ac59-3d95deb106e8: About # About
     bdb64804-b3e3-4ad0-9ad4-0031ae4d0619: Text # Text
     be597e10-b2b1-4440-858f-0382424ba3bc: 'Site Description' # Site Description
+    c788f637-2c81-4fd2-a677-e09c8c8620f6: 'Public Schema' # Public Schema
     d4b45657-380d-438f-b66f-2355e2cf497e: Summary # Summary
     d7667796-b743-4617-bd23-836b4cdb569d: About # About
     dc05cb0f-f3bb-4626-89c9-b167ee758fa3: 'Blog Post Fields' # Blog Post Fields
@@ -42,10 +58,11 @@ system:
   edition: solo
   live: true
   name: Tradezone
-  schemaVersion: 3.7.33
+  schemaVersion: 4.0.0.9
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
+  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null
