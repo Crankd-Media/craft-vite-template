@@ -3,7 +3,10 @@
 ## System Requirements
 - PHP Version: ^8.0.0
 - Composer
+- Web server (eg. MAMP)
 - MySQL / MariaDB
+- NodeJS
+- pnpm or npm
 
 ## Steps To Create Project
 
@@ -11,17 +14,35 @@
 
 `npx degit crankd-media/craft-vite-template`
 
-### Generate a security key
+### Install CraftCMS
 
-`php craft setup/security-key`
+To start run `composer install` to fetch and install all of craft's dependencies.
+
+Create a `.env` file by running `cp .env.example .env`
+
+Next run `php craft setup/security-key` to generate a craft security key
 
 In your terminal, go to your project’s root directory and run the following command to kick off the Setup Wizard.
 
 `php craft setup`
 
-Follow install process for setting up craft with a database and your web server.
+Before installing Craft setup a database and web server. A simple way to setup a web server and database is by using an application called [MAMP](https://www.mamp.info/)
 
-Go to your local site index page eg - `https://mysite/admin/login` _replace mysite with your local domain name_
+*Follow install process for setting up craft with a database and your web server.*
+
+### Frontend
+All the twig templates, javascript and css files are bundled and managed using [Vite](https://vitejs.dev/)
+Make sure to run `pnpm install` or `npm install` to download all the required node modules.
+
+## Development Environment
+To run build your frontend assets with hot-module reloading simply run `pnpm dev` or `npm run dev`.
+
+To make sure you are in development mode check that `ENVIRONMENT=dev` is set in your `.env` file.
+
+## Production Environment
+When you are ready to deploy your project run `pnpm build` or `npm run build`
+
+On your production server make sure to set `ENVIRONMENT=production` so that built assets are fetched from the `web/dist` folder.
 
 ## Project Structure
 
@@ -32,7 +53,6 @@ Below are some important folders to note.
 - `config` - php config files are configured here. The `vite.php` file is important for configuring the connection between vite and craft via this plugin [here](https://github.com/nystudio107/craft-vite)
 
 Additionally the `vite.config.js` is for configuring vite itself.
-
 
 *Documentation for the craft-vite plugin can be found [here](https://nystudio107.com/docs/vite/).*
 
@@ -58,3 +78,4 @@ It is recommended to use a plugin for Twig templates to assist with the process 
 ### AlpineJS Intenseness and Highlighting
 - AlpineJS intellisense in vscode use [Alpine.js IntelliSense](https://marketplace.visualstudio.com/items?itemName=adrianwilczynski.alpine-js-intellisense)
 - AlpineJS syntax highlighting in vscode use [Alpine.js Syntax Highlight](https://marketplace.visualstudio.com/items?itemName=adrianwilczynski.alpine-js-intellisense)
+
