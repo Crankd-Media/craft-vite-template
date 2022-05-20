@@ -1,0 +1,48 @@
+{% set helpGuides = craft.entries.section('helpGuides') %}
+
+{% extends "Layouts/_layout.twig" %}
+{% block content %}
+	<div class="mb-12">
+		<a class="btn" href="{{url('/')}}">Back to website</a>
+	</div>
+	<div class="justify-between flex max-w-5xl mx-auto mb-20">
+		<h1 class="text-3xl lg:text-5xl font-bold">CraftCMS Guide</h1>
+		<!-- Crank'd attribution -->
+		<a href="https://crankd.nz" target="_blank" class="w-20 lg:w-28 aspect-auto">
+			<div class="text-sm text-neutral-800 font-bold">
+				Site crafted by
+			</div>
+			<span class="text-[#f47b6b]">
+				{% include "_components/logos/crankd.twig" %}
+			</span>
+		</a>
+	</div>
+	<div
+		class="flex lg:gap-16 justify-center lg:divide-x">
+		<!-- Side Navigation -->
+		<div class="hidden lg:block w-full md:w-1/4 lg:w-1/5 xl:w-1/6 bg-white">
+			<nav class="py-4">
+				<h2 class="font-bold text-xl mb-6 px-3">Help Guides</h2>
+				<ul class="list-reset">
+					{% for guide in helpGuides.all() %}
+						<li class="mb-4">
+							<a href="#{{ guide }}" class="block rounded hover:bg-neutral-100 px-3 py-2 text-gray-800 no-underline">
+								{{ guide.title }}
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</nav>
+		</div>
+		<!-- Documentation -->
+		<article class="lg:pl-6">
+			{% for guide in helpGuides.all() %}
+				<section id="{{guide.title}}" class="prose my-12">
+					<h2>{{guide.title}}</h2>
+					{{guide.documentBodyField}}
+				</section>
+			{% endfor %}
+		</article>
+		<!-- /Documentation -->
+	</div>
+{% endblock %}

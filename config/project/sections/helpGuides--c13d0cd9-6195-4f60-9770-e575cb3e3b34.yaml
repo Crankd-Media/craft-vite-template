@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: helpGuides
+name: 'Help Guides'
+propagationMethod: all
+siteSettings:
+  fc4e3b0a-4009-4a52-8058-594d713baa1a: # CraftTemplate
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 2
+  uid: e3810f1e-8031-4fb4-9401-27eb26d642ff
+type: structure

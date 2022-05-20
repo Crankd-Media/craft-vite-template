@@ -1,0 +1,48 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 6767aad8-276f-44af-a0e2-6035fd3315db # Branding
+handle: mainLogo
+instructions: 'Add your company logo'
+name: 'Main Logo'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:84e12084-7c43-40cb-8704-4676aa61a765'
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maxRelations: 1
+  minRelations: 1
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: true
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:0ce672be-119f-48a3-a440-24845d748ddf' # Website Content
+  restrictedLocationSubpath: branding
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Asset
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\assets\AssetCondition
+  selectionLabel: 'Add a logo'
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  source: null
+  sources:
+    - 'volume:0ce672be-119f-48a3-a440-24845d748ddf' # Website Content
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

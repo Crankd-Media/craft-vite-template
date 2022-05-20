@@ -1,0 +1,27 @@
+columnSuffix: ajekdxao
+contentColumnType: text
+fieldGroup: a4106ab6-a1b3-4bb3-b1fb-31b279b65fea # Document Body Content
+handle: documentBodyField
+instructions: null
+name: 'Document Body Field'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: ''
+  columnType: text
+  configSelectionMode: manual
+  defaultTransform: ''
+  manualConfig: '{"buttons":["html","formatting","bold","italic","unorderedlist","orderedlist","link","image","video"],"formatting":["p"],"formattingAdd":{"subheading":{"title":"Subheading","api":"module.block.format","args":{"tag":"h3"}},"tab-button":{"title":"Tab Button","api":"module.block.format","args":{"tag":"p","class":"tab-button"}}},"plugins":["video"],"linkNewTab":true,"toolbarFixed":true}'
+  purifierConfig: null
+  purifyHtml: false
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

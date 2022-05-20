@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 986d51ad-79a8-45a8-bf62-01f25129da38 # About Image
+            fieldUid: 986d51ad-79a8-45a8-bf62-01f25129da38
             instructions: null
             label: null
             required: false
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 3c90d3cb-d126-4e18-8464-4517e74d8bdd # Post Content
+            fieldUid: 3c90d3cb-d126-4e18-8464-4517e74d8bdd
             instructions: null
             label: null
             required: false

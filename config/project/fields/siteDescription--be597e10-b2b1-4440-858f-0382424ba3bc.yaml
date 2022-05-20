@@ -1,17 +1,17 @@
 columnSuffix: tmqhchzh
 contentColumnType: text
-fieldGroup: abdef80e-e162-418f-a801-45d77c378f14 # Global Fields
+fieldGroup: 9a5f418d-169c-4f7d-8977-6204ee41c8aa # Site Information
 handle: siteDescription
-instructions: ''
+instructions: null
 name: 'Site Description'
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: '1'
+  initialRows: 4
+  multiline: true
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

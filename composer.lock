@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "acd8bbb2c511b43e43afc8ccd7f5aee0",
+    "content-hash": "b44a14056cec39900535c0a19e356238",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -1056,6 +1056,47 @@
             "time": "2022-04-17T02:14:46+00:00"
         },
         {
+            "name": "crankd/websitedocumentation",
+            "version": "2.0.0",
+            "dist": {
+                "type": "path",
+                "url": "../../craft-plugins/craft-website-documentation",
+                "reference": "ba9cbaa938b322adcb1fdeb0258a2c4ee8cadaf1"
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0",
+                "craftcms/redactor": "^3"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Website Documentation",
+                "handle": "websitedocumentation",
+                "developer": "Bluegg",
+                "developerUrl": "https://bluegg.co.uk",
+                "documentationUrl": "https://github.com/bluegg/websitedocumentation/blob/main/README.md",
+                "changelogUrl": "https://raw.githubusercontent.com/bluegg/websitedocumentation/main/CHANGELOG.md",
+                "class": "bluegg\\websitedocumentation\\WebsiteDocumentation"
+            },
+            "autoload": {
+                "psr-4": {
+                    "bluegg\\websitedocumentation\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bluegg",
+                    "homepage": "https://bluegg.co.uk"
+                }
+            ],
+            "description": "Craft Plugin: Creates two links within admin for Styleguide and CMS Guide",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "creocoder/yii2-nested-sets",
             "version": "0.9.0",
             "source": {
@@ -1903,16 +1944,16 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v9.12.2",
+            "version": "v9.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "32badf046bfc187afacbee37b9820c5e200285d0"
+                "reference": "7d7617afdca6f15c881856c679da4e76820e7674"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/32badf046bfc187afacbee37b9820c5e200285d0",
-                "reference": "32badf046bfc187afacbee37b9820c5e200285d0",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/7d7617afdca6f15c881856c679da4e76820e7674",
+                "reference": "7d7617afdca6f15c881856c679da4e76820e7674",
                 "shasum": ""
             },
             "require": {
@@ -1954,11 +1995,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-05-02T14:05:19+00:00"
+            "time": "2022-05-16T15:20:45+00:00"
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v9.12.2",
+            "version": "v9.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -2004,7 +2045,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v9.12.2",
+            "version": "v9.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -2052,7 +2093,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v9.12.2",
+            "version": "v9.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -2284,23 +2325,23 @@
         },
         {
             "name": "moneyphp/money",
-            "version": "v4.0.3",
+            "version": "v4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moneyphp/money.git",
-                "reference": "d945f775bd6ab0920d9d205813d8831a899a8844"
+                "reference": "efe904ab6109d87046eb624d5dff7d270fd0cca5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moneyphp/money/zipball/d945f775bd6ab0920d9d205813d8831a899a8844",
-                "reference": "d945f775bd6ab0920d9d205813d8831a899a8844",
+                "url": "https://api.github.com/repos/moneyphp/money/zipball/efe904ab6109d87046eb624d5dff7d270fd0cca5",
+                "reference": "efe904ab6109d87046eb624d5dff7d270fd0cca5",
                 "shasum": ""
             },
             "require": {
                 "ext-bcmath": "*",
                 "ext-filter": "*",
                 "ext-json": "*",
-                "php": "^8.0"
+                "php": "~8.0.0 || ~8.1.0"
             },
             "require-dev": {
                 "cache/taggable-cache": "^1.1.0",
@@ -2313,12 +2354,11 @@
                 "moneyphp/iso-currencies": "^3.2.1",
                 "php-http/message": "^1.11.0",
                 "php-http/mock-client": "^1.4.1",
-                "phpbench/phpbench": "1.0.0-beta1@BETA",
-                "phpspec/phpspec": "^7.0.1",
+                "phpbench/phpbench": "^1.2.5",
+                "phpspec/phpspec": "^7.2",
                 "phpunit/phpunit": "^9.5.4",
                 "psalm/plugin-phpunit": "^0.15.1",
                 "psr/cache": "^1.0.1",
-                "roave/infection-static-analysis-plugin": "^1.7",
                 "vimeo/psalm": "~4.7.0 || ^4.8.2"
             },
             "suggest": {
@@ -2367,9 +2407,9 @@
             ],
             "support": {
                 "issues": "https://github.com/moneyphp/money/issues",
-                "source": "https://github.com/moneyphp/money/tree/v4.0.3"
+                "source": "https://github.com/moneyphp/money/tree/v4.0.4"
             },
-            "time": "2021-12-01T10:39:00+00:00"
+            "time": "2022-05-18T19:32:15+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -7228,9 +7268,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],

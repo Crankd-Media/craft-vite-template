@@ -1,0 +1,25 @@
+fieldLayouts:
+  90afbb8c-2282-467e-8582-a0a23f3b68b5:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: f302e876-fdee-47e2-9958-f288a6e646f8 # Document Body Field
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 70381f4d-c3e2-445f-888b-31deef87173e
+            warning: null
+            width: 100
+        name: Content
+        uid: de168b86-1ac8-412a-8db3-970559382acb
+handle: default
+hasTitleField: true
+name: Default
+section: c13d0cd9-6195-4f60-9770-e575cb3e3b34 # Help Guides
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
