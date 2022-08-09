@@ -2,6 +2,7 @@
 
 ## System Requirements
 
+- Node
 - Docker
 - Homebrew (OSX / Linux) or Chocolatey (Windows)
 - DDEV
