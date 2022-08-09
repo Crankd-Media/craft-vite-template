@@ -12,6 +12,10 @@
 
 `npx degit crankd-media/craft-vite-template`
 
+### Rename project
+
+Go to the `.ddev` folder and open the `config.yaml` file. Change the `projectname` to your project name.
+
 ### Installing Dependencies
 
 In the project directory run `ddev start` to start the container.
