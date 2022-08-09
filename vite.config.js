@@ -1,6 +1,7 @@
-import legacy from "@vitejs/plugin-legacy";
 import ViteRestart from "vite-plugin-restart";
-import mkcert from "vite-plugin-mkcert";
+import viteCompression from 'vite-plugin-compression';
+import manifestSRI from "vite-plugin-manifest-sri";
+import path from 'path';
 
 // https://vitejs.dev/config/
 export default ({ command }) => ({
@@ -13,22 +14,31 @@ export default ({ command }) => ({
       input: {
         app: "./src/js/app.ts",
       },
+      output: {
+        sourcemap: true
+      }
     },
   },
   plugins: [
-    legacy({
-      targets: ["defaults", "not IE 11"],
+    manifestSRI(),
+    viteCompression({
+      filter: /\.(js|mjs|json|css|map)$/i
     }),
     ViteRestart({
-      reload: ["./templates/**/*"],
+      reload: ["templates/**/*"],
     }),
-    mkcert(),
   ],
+  publicDir: path.resolve(__dirname, 'src/public'),
+  resolve: {
+      alias: {
+          '@': path.resolve(__dirname, 'src'),
+          '@css': path.resolve(__dirname, 'src/css'),
+          '@js': path.resolve(__dirname, 'src/js'),
+      },
+  },
   server: {
-    https: true,
     host: "0.0.0.0",
-    hmr: {
-      host: "localhost",
-    },
+    port: 3000,
+    strictPort: true,
   },
 });

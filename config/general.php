@@ -1,4 +1,5 @@
 <?php
+
 /**
  * General Configuration
  *
@@ -39,6 +40,7 @@ return [
     // Dev environment settings
     'aliases' => [
         '@web' => App::env('PRIMARY_SITE_URL'),
+        '@webroot' => dirname(__DIR__) . '/web',
         '@root' => dirname(__DIR__) . '/',
     ],
 ];
