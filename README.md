@@ -16,6 +16,8 @@
 
 Go to the `.ddev` folder and open the `config.yaml` file. Change the `projectname` to your project name.
 
+Run `cp .env.example .env` and change the value of `PRIMARY_SITE_URL` to `https://projectname.crankd.local where projectname is the name you gave you ddev project in the previous step.
+
 ### Installing Dependencies
 
 In the project directory run `ddev start` to start the container.
