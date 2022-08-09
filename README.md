@@ -25,13 +25,36 @@ In the project directory run `ddev start` to start the container.
 To install the composer dependencies run `ddev composer install`
 To install npm dependencies run `ddev npm install`
 
+### Setting up CraftCMS
+
+To setup CraftCMS run `ddev php craft setup`
+
+#### **Now for each prompt enter the following:**
+
+```bash
+Which database driver are you using? [mysql,pgsql,?]: mysql
+Database server name or IP address: [127.0.0.1] db
+Database port: [3306]
+Database username: [root] db
+Database password: db
+Database name: db
+Database table prefix:
+```
+
+Next run `ddev php craft setup/security-key` to generate a security key for your project.
+
+### Install Craft Plugins
+
+CraftCMS should now be setup correctly, to enable the base plugins for this template go to `Settings > Plugins` and install the following plugins by clicking the gear icon and selecting `Install`:
+
+- Redactor
+- Vite
+
 ## Running Vite
 
 This project uses [Vite](https://vitejs.dev/) to build assets for production and hot module reloading (HMR) for development. When the Vite server is running Javascript, Typescript and CSS files will update in the browser on the fly using the browser's native ES Modules functionality.
 
 To start the Vite dev server run `ddev npm run dev`
-
-Go to (https://tradezone.crankd.local/) to see the local site.
 
 ## Development Environment
 
